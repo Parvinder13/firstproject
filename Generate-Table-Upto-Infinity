@@ -1,0 +1,22 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int number,a;
+
+    cout << "Enter the number to generate table : ";
+
+    cin >> number;
+
+    for(int a=1; a<=200; a++)
+      {
+         cout  <<setw(10)<< a*number;
+
+          if(a%10==0)
+          {
+            cout << endl;
+          }
+      }
+      return 0;
+}
