@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int guest, chairs, result=1;
+    cout << "Enter the no. of Guests : ";
+
+    cin >> guest;
+
+    cout << "\nEnter the no. of Chairs available : ";
+
+    cin >> chairs;
+
+    for(int i=0;i<chairs;i++)
+    {
+        result*=(guest-i);
+    }
+    cout << "\nPossible Outcomes to sit on Chairs : "<< result;
+    return 0;
+}
