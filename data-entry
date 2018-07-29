@@ -1,0 +1,45 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+class Employee
+{
+    private:
+     int id;
+      string name;
+    public:
+      void getdata();
+       void putdata();
+};
+
+ void Employee::getdata()
+ {
+     cout<< "\tEnter the Employee ID :  ";
+
+     cin>> id;
+     cout << endl;
+
+     cout<< "\tEnter the Name of the Employee :  ";
+
+     cin>> name;
+     cout<< endl;
+ }
+ void Employee::putdata()
+ {
+     cout<< "  Employee ID : "<< id<<endl<<endl;
+
+     cout<< "  Name of the Employee : "<< name<<endl<<endl;
+ }
+ int main()
+ {
+     Employee E[2];
+     for(int i=0;i<2;i++)
+     {
+         E[i].getdata();
+     }
+     for(int i=0;i<2;i++)
+     {
+         E[i].putdata();
+     }
+     return 0;
+ }
